@@ -17,5 +17,4 @@ function VowelCount(str) {
   
   // Counter represents total number of vowels in string
   return counter;
-  
 }
