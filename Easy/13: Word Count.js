@@ -5,5 +5,4 @@ function WordCount(str) {
   
   // Length of array represents total number of words
   return arr.length;
-         
 }
