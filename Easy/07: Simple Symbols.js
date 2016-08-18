@@ -1,10 +1,10 @@
 function SimpleSymbols(str) { 
 
   // Convert alphabetic characters to lowercase for unicode check
-  var str = str.toLowerCase();
+  let str = str.toLowerCase();
   
   // Loop through string
-  for (var i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i++) {
   
       // If alphabetic character...
       if (str.charCodeAt(i) > 96 && str.charCodeAt(i) < 123) {
