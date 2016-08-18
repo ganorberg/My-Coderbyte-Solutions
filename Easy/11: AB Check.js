@@ -1,7 +1,7 @@
 function ABCheck(str) { 
 
   // Loop through word  
-  for (var i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i++) {
   
       // If letter equals 'a', check 3 positions in front and behind for 'b'
       if (str.charAt(i) === 'a') {
