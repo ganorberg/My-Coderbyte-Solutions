@@ -19,7 +19,7 @@ function LongestWord(sen) {
         let letter = word[j];
         
         if ((word.charCodeAt(j) > 96 && word.charCodeAt(j) < 123) || (word.charCodeAt(j) > 47 && word.charCodeAt(j) < 58)) {
-             noSymbols.push(letter);
+           noSymbols.push(letter);
         }
     }
     
