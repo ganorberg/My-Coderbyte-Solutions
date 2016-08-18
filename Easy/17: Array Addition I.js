@@ -3,10 +3,10 @@ function ArrayAdditionI(arr) {
     
   
   // Calculate highest value by reducing array such that only the larger of each pair of values is returned
-  var highest = arr.reduce(function(p, v) { return v > p ? v : p; });
+  let highest = arr.reduce(function(p, v) { return v > p ? v : p; });
   
   // Filter out highest value by keeping all values less than the highest value
-  var smallArr = arr.filter(function(val) { return val < highest; });
+  let smallArr = arr.filter(function(val) { return val < highest; });
   
   // Found this subsetsum function from lumberjack87 in Coderbyte forum
   // Uses recursive template from Eloquent Javascript Ch.3 to search all possible combinations via branching
@@ -18,7 +18,7 @@ function ArrayAdditionI(arr) {
     }
     
     // First term is stored
-    var n = array[0];
+    let n = array[0];
     
     // Only values after the first term are saved
     array = array.slice(1);
