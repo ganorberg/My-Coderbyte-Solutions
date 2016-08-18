@@ -1,8 +1,4 @@
-function ArithGeo(arr) { 
-  //get diff and ratio
-  //loop to see if diff and ratio apply to all terms
-  //track that sequence continues with counters
-  //if counters === length-1, return
+function ArithGeo(arr) {
   
   // Store arithmetic difference and geometric ratio
   let diff = arr[1] - arr[0];
