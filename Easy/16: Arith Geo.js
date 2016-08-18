@@ -5,15 +5,15 @@ function ArithGeo(arr) {
   //if counters === length-1, return
   
   // Store arithmetic difference and geometric ratio
-  var diff = arr[1] - arr[0];
-  var ratio = arr[1] / arr[0];
+  let diff = arr[1] - arr[0];
+  let ratio = arr[1] / arr[0];
   
   // Use counters to see if entire sequence is arithmetic or geometric
-  var arithCount = 0;
-  var geoCount = 0;
+  let arithCount = 0;
+  let geoCount = 0;
   
   // Loop through sequence
-  for (var i = 0; i < arr.length - 1; i++) {
+  for (let i = 0; i < arr.length - 1; i++) {
   
       // If difference of terms matches arithmetic difference, add 1 to arithmetic counter
       if (arr[i+1] - arr[i] === diff) {
