@@ -1,6 +1,6 @@
 function FirstReverse(str) { 
   
-  //convert string to array, use native reverse method, convert array to string
+  // Convert string to array, use native reverse method, convert array to string
   return str.split('').reverse().join('');
          
 }
