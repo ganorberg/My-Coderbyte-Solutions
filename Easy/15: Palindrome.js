@@ -11,7 +11,6 @@ function Palindrome(str) {
   
   // After removing all spaces, return Boolean for whether the original string equals the reversed string
   return noSpaces === reversed;
-  
 }
 
 WITH CHAINING:
