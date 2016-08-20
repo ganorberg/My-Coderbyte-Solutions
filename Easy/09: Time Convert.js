@@ -8,5 +8,4 @@ function TimeConvert(num) {
   
   // Concatenate hours and minutes with a colon between to match the desired format
   return hours + ":" + minutes;
-  
 }
