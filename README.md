@@ -6,16 +6,16 @@ After finishing Codecademy and Code School's Javascript courses, I was disappoin
 Before proceeding further on your Coderbyte journey, I highly recommend learning the native string, number and array methods ASAP. These are your basic tools in your toolbox for problem-solving. I personally created flash cards so that if given a name, I could tell you what the method does, and if given what the method does, I could tell you the name. At a minimum, this will improve your recognition of all methods, and recognition is vital to both navigating paths to solutions and knowing where to look when you're stuck.
 
 String methods:
-http://www.w3schools.com/js/js_string_methods.asp
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+-http://www.w3schools.com/js/js_string_methods.asp
+-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
 Number methods:
-http://www.w3schools.com/js/js_number_methods.asp
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+-http://www.w3schools.com/js/js_number_methods.asp
+-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 
 Array methods:
-http://www.w3schools.com/js/js_array_methods.asp
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+-http://www.w3schools.com/js/js_array_methods.asp
+-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 Pro tips:
 - Get comfortable converting between the various data types. For example, you will often need to convert a number into a string with .toString(), a string into an array with .split(''), an array into a string with .join(''), and so on.
