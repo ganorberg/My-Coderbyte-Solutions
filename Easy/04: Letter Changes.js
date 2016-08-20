@@ -1,6 +1,6 @@
 function LetterChanges(str) { 
   
-  // A solution without regex or unicode!
+  // A solution without regex or Unicode!
   
   // Write out alphabet and shifted alphabet with vowels capitalized
   const ALPHABET = 'abcdefghijklmnopqrstuvwxyz';
@@ -15,16 +15,16 @@ function LetterChanges(str) {
   // Loop through string
   for (let i = 0; i < str.length; i++) {
   
-      // If alphabetic character, push shifted character in new alphabet
+      // If alphabetic character, store shifted character from new alphabet
       if (ALPHABET.includes(str[i])) {
          answer.push(NEW_ALPHABET[ALPHABET.indexOf(str[i])]);
       
-      // If non-alphabetic character, simply push to answer array
+      // If non-alphabetic character, simply push that character to answer array
       } else {
          answer.push(str[i]);
       }
   }
   
-  // Return answer as string
+  // Return modified string
   return answer.join('');   
 }
