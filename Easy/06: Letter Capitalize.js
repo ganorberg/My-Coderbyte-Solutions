@@ -1,6 +1,6 @@
 function LetterCapitalize(str) { 
 
-  // Split string into words array 
+  // Split string into array of words 
   let words = str.split(' ');
   
   // Create solution storage
