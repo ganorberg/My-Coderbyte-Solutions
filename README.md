@@ -29,6 +29,8 @@ Array methods:
 
 - Strings are immutable, which means they cannot be modified as is. Arrays are mutable and can be modified in place, so you will often convert to an array to change the way a string looks.
 
+- You will often need to keep track of how many times an event occurs with a "counter" variable initialized to 0. We usually place it outside of loops because otherwise the counter is reset to 0 upon every loop!
+
 - Regular expressions (abbreviated as "regex" or "RegExp") show up early on in the top solutions to various problems. I've provided solutions without regex because of its complexity to learn and read. However, regex can be incredibly powerful as a search and replace tool, so if you'd like to give it a try, I recommend checking out this website: http://www.regexr.com/
 
 
