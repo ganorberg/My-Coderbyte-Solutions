@@ -1,7 +1,7 @@
 function SimpleSymbols(str) { 
 
   // Convert alphabetic characters to lowercase for Unicode check
-  let str = str.toLowerCase();
+  str = str.toLowerCase();
   
   // Loop through string
   for (let i = 0; i < str.length; i++) {
