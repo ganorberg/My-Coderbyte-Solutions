@@ -1,6 +1,6 @@
 function AlphabetSoup(str) { 
 
-  // Split string into array of letters
+  // Split string into array of letters to use native sort method
   let arr = str.split('');
   
   // Sort letters by ascending order of Unicode
