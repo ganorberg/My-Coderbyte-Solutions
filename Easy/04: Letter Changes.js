@@ -25,6 +25,6 @@ function LetterChanges(str) {
       }
   }
   
-  // Return modified string
+  // Join the array into our final modified string!
   return answer.join('');   
 }
