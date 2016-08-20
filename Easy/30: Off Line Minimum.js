@@ -1,5 +1,3 @@
-// Objective: Create a subset of an array.
-
 function OffLineMinimum(strArr) { 
   
   // Test for integers
@@ -7,7 +5,7 @@ function OffLineMinimum(strArr) {
       return !isNaN(parseInt(n)) && isFinite(n);
   }
   
-  // Need one array for integer memory while looping and another for smallest integers 
+  // Need one array for holding integers during loop and another for storing smallest integers at each 'E'
   let integers = [];
   let answer = [];
   
@@ -28,6 +26,6 @@ function OffLineMinimum(strArr) {
       }
   }
   
-  // Match desired format
+  // Format
   return answer.join(',');
 }
