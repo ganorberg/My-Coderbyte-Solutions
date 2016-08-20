@@ -1,5 +1,3 @@
-// Objective: Search string for all integers then add.
-
 function NumberAddition(str) { 
   
   // No regex or eval used!
@@ -9,14 +7,15 @@ function NumberAddition(str) {
         return !isNaN(parseInt(n)) && isFinite(n);
     }
     
-    // Need one storage array for individual digits and one to push numbers with multiple digits
+    // Need one storage array for temporary consecutive digits 
+    // and another to combine those into the actual multiple-digit number they represent
     let digits = [];
     let realNumbers = [];
     
     // Loop through string
     for (let i = 0; i < str.length; i++) {
         
-        // Readability always helps
+        // Readability!
         let char = str[i];
         let nextChar = str[i+1];
         
@@ -24,8 +23,8 @@ function NumberAddition(str) {
         if (isNumeric(char) === true) {
             digits.push(char);
             
-            // If next character is not integer, current number is finished. Push to 
-            // realNumbers array and clear digits for next loop.
+            // If next character is NOT an integer, then current number is finished,
+            // so push previously consecutive digits to realNumbers array and clear digits for next loop.
             if (isNumeric(nextChar) === false) {
                realNumbers.push(digits.join(''));
                digits = [];
@@ -33,6 +32,6 @@ function NumberAddition(str) {
         }
     }
     
-    // If numbers exist in string, sum them. If no numbers, return 0.
+    // If no numbers exist in string, return 0. If numbers do exist, add 'em up!
     return realNumbers.length ? realNumbers.reduce(function(p, v) { return parseInt(p) + parseInt(v); }) : 0;
 }
