@@ -32,6 +32,6 @@ function ArithGeo(arr) {
       return 'Geometric';
   }
   
-  // If both conditional checks fail, then sequence is neither arithmetic nor geometric
+  // If both conditional checks fail, then sequence is neither arithmetic nor geometric!
   return -1;
 }
