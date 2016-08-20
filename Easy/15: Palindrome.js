@@ -1,12 +1,12 @@
 function Palindrome(str) { 
 
-  // Remove spaces by splitting. Then, join characters together and convert to array of characters without spaces.
+  // Convert to array with spaces removed
   let arr = str.split(' ').join('').split('');
   
-  // Reverse characters with native method
+  // Reverse characters with native array method
   let reversed = arr.reverse().join('');
   
-  // Create original string without spaces
+  // Create original string without spaces to compare
   let noSpaces = str.split(' ').join('');
   
   // After removing all spaces, return Boolean for whether the original string equals the reversed string
