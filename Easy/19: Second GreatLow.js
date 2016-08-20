@@ -1,12 +1,9 @@
 function SecondGreatLow(arr) { 
-  
-  //loop through array and push values not matching highest and lowest to answer array
-  //sort again, return first and last items formatted
-  
+
   // Sort array in ascending order
   let sorted = arr.sort(function(a,b) {return a - b;});
   
-  // If length is 2, we simply reverse the two given values.
+  // Edge case: if only two digits, we simply reverse them.
   if (arr.length === 2) {
       return sorted.reverse().join(' ');
   }
