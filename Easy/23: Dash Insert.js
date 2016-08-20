@@ -15,6 +15,6 @@ function DashInsert(str) {
       }
   } 
 
-  // Now all odd pairs have dashes between them!
+  // Odd pairs will have exactly one dash between them!
   return answer.join('');      
 }
