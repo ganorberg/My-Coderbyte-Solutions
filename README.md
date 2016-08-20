@@ -1,11 +1,11 @@
 # My-Coderbyte-Solutions
 If you need help with Coderbyte's Easy Challenges, you've come to the right place! I've laid out all my solutions with well-commented code such that anyone can follow along.
 
-Some background:
+**Some Background**
 
 After finishing Codecademy and Code School's Javascript courses, I was disappointed that I could barely tackle the easiest Coderbyte Challenges. It turns out that most online Javascript courses are great for learning syntax, but they don't teach problem-solving skills. I hope that by sharing my solutions and thought process for each problem that you can pick up some common (and not so common!) strategies and, most importantly, understand why these strategies work.
 
-Pro tips:
+**Pro Tips**
 
 Before proceeding further on your Coderbyte journey, I highly recommend learning the native string, number and array methods ASAP. These are your basic tools in your toolbox for problem-solving. I personally created flash cards so that if given a name, I could tell you what the method does, and if given what the method does, I could tell you the name. At a minimum, this will improve your recognition of all methods, and recognition is vital to both navigating paths to solutions and knowing where to look when you're stuck.
 
