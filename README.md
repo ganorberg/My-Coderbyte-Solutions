@@ -7,7 +7,7 @@ After finishing Codecademy and Code School's Javascript courses, I was disappoin
 
 **Pro Tip**
 
-Before proceeding further on your Coderbyte journey, I highly recommend learning the native string, number and array methods ASAP. These are your basic tools in your toolbox for problem-solving. I personally created flash cards so that if given a name, I could tell you what the method does, and if given what the method does, I could tell you the name. At a minimum, this will improve your recognition of all methods, and recognition is vital to both navigating paths to solutions and knowing where to look when you're stuck.
+Before proceeding further on your Coderbyte journey, I highly recommend learning the native string, number and array methods ASAP. These are your basic tools in your toolbox for problem-solving. I personally created flash cards so that if given a name, I could tell you what the method does, and if given what the method does, I could tell you the name. At a minimum, this will improve your recognition of all methods, and recognition is VITAL to both navigating paths to solutions and knowing where to look when you're stuck.
 
 String methods:
 1. http://www.w3schools.com/js/js_string_methods.asp
