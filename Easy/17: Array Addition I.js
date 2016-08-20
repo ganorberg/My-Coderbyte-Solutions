@@ -1,7 +1,5 @@
 function ArrayAdditionI(arr) { 
-  
-    
-  
+
   // Calculate highest value by reducing array such that only the larger of each pair of values is returned
   let highest = arr.reduce(function(p, v) { return v > p ? v : p; });
   
@@ -20,10 +18,10 @@ function ArrayAdditionI(arr) {
     // First term is stored
     let n = array[0];
     
-    // Only values after the first term are saved
+    // The rest of the array is stored separately
     array = array.slice(1);
     
-    // Call function with same target and new array OR subtract first value from target, then search new array 
+    // Call function with same target and sliced array OR subtract first value from target, then search sliced array 
     return subsetsum(target, array) || subsetsum(target - n, array);
   }
   
