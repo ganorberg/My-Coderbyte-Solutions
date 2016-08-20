@@ -1,7 +1,7 @@
 function VowelCount(str) { 
   
-  // Make all letter lowercase for conditional check in loop
-  let str = str.toLowerCase();
+  // Make all letters lowercase for conditional check in loop
+  str = str.toLowerCase();
   
   // Create counter storage
   let counter = 0;
