@@ -21,7 +21,7 @@ function LetterCountI(str) {
           if (table[word][letter] === undefined) {
               table[word][letter] = 1;
               
-          // If letter exists, add 1 to its count and check if this letter has the new highest count in that word
+          // If letter exists, add 1 to its count and update highest if this letter has the new highest count in that word
           } else {
               table[word][letter]++;
               if (table[word][letter] > table[word]['highest']) {
@@ -34,7 +34,7 @@ function LetterCountI(str) {
   // Create storage for word with highest count
   let answer = {word: null, highest: 1};
   
-  // Loop through words in table to track highest count
+  // Loop through words in table to track highest count per word
   for (let w in table) {
       
       // If current word's highest count is greater than the overall highest, replace highest and store associated word
@@ -44,6 +44,6 @@ function LetterCountI(str) {
       } 
   }
   
-  // If letters repeat in any of the words, return word with the highest repeated count. If no repeats, return -1.
+  // If no letters repeat in any word, return -1. Otherwise, return word with the most repeated letters!
   return (answer['highest'] > 1) ? answer['word'] : -1;       
 }
