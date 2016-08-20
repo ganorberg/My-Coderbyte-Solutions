@@ -1,12 +1,10 @@
-//Objective: Manipulate a string using dashes (-).
-
 function DashInsert(str) { 
   
-  // Storage for integers with dashes
+  // Storage for pushing integers and dashes
   let answer = [];
   
-  // Loop through array until second to last term to avoid error on i+1 check
-  for (let i = 0; i < str.length - 1; i++) {
+  // Loop through array
+  for (let i = 0; i < str.length; i++) {
       
       // Number will always be pushed as integer
       answer.push(parseInt(str[i]));
@@ -16,10 +14,7 @@ function DashInsert(str) {
          answer.push('-');  
       }
   } 
-  
-  // Include last digit which wasn't looped over
-  answer.push(str[str.length - 1]);
-  
-  // Join array into string
+
+  // Now all pairs of odds have dash between them!
   return answer.join('');      
 }
