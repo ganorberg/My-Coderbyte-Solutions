@@ -21,12 +21,12 @@ function CountingMinutesI(str) {
        totalMinutes -= 12 * 60;
     }
     
-    // If pm but NOT noon, add 720 minutes.
+    // If pm but NOT noon, add 720 minutes
     if (time.includes('p') && hours !== 12) {
        totalMinutes += 12 * 60;
     }
     
-    // Function returns total minutes with exceptions included.
+    // Function returns total minutes with exceptions included
     return totalMinutes;
   }
   
