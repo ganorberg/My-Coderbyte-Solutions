@@ -1,26 +1,18 @@
 function MeanMode(arr) { 
-  //Objective: Compare mean and mode of array of integers.
+
+  // Sum all values, then divide by the total number of values to get the mean
+  let mean = arr.reduce(function(p, v) { return p + v; }) / arr.length;
   
-  let len = arr.length;
+  // Create object with key-value pairs of digit: count
+  let table = arr.reduce(function(memo, n) {
+    n in memo ? memo[n]++ : memo[n] = 1;
+    return memo;
+  }, {});
   
-  // Use reduce to sum all values then divide by total number of values to get mean
-  let mean = arr.reduce(function(p, v) { return p + v; }) / len;
-  
-  // To get mode, we'll need object storage
-  let table = {};
-  
-  // Loop through the array
-  for (let i = 0; i < len; i++) {
-      let num = arr[i];
-      
-      // If the integer does not exist in the table, create it with a value of 1. Otherwise, add 1 to value.
-      (table[num] === undefined) ? table[num] = 1 : table[num]++;
-  }
-  
-  // Track mode with its count
+  // Track mode and number of times it appears in array
   let answer = {mode: null, count: 0};
   
-  // Loop through integers to determine which has highest count. Update integer with respective count in answer object.
+  // Loop through integers to determine which has highest count. Update mode and count if find new mode.
   for (let n in table) {
       if (table[n] > answer['count']) {
           answer['mode'] = parseInt(n);
