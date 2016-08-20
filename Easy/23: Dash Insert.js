@@ -15,6 +15,6 @@ function DashInsert(str) {
       }
   } 
 
-  // Now all pairs of odds have dash between them!
+  // Now all odd pairs have dashes between them!
   return answer.join('');      
 }
