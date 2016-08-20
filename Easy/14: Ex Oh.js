@@ -15,6 +15,6 @@ function ExOh(str) {
       }
   }
   
-  // If the counters for 'x' and 'o' are the same, returns true. Otherwise, returns false.
+  // If the counters for 'x' and 'o' are the same, return true. Otherwise, return false.
   return x === o;
 }
