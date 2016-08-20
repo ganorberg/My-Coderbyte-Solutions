@@ -1,5 +1,3 @@
-// Objective: Determine whether or not a number is a power of two.
-
 function PowersofTwo(num) { 
   
   // Divide number by 2 until the number is smaller than 2.
