@@ -1,7 +1,7 @@
 function LongestWord(sen) { 
   // A solution without regex!
   
-  // Make all letters lowercase for unicode check and convert to array by splitting at spaces
+  // Make all letters lowercase for Unicode check and convert to array by splitting at spaces
   let withSymbols = sen.toLowerCase().split(' ');
   
   // Use storage array to push words without symbols
@@ -10,7 +10,7 @@ function LongestWord(sen) {
   // Create memory for word with largest length
   let highest = {word: null, count: 0};
   
-  // Loop through array with symbols
+  // Loop through array containing symbols
   for (let i = 0; i < withSymbols.length; i++) {
     let word = withSymbols[i];
     
