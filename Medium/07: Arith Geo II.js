@@ -2,11 +2,11 @@ function ArithGeoII(arr) {
     
     // Write function test for arithmetic sequence where each pair of terms should have same difference
     function isArithmetic(arr) {
-      let diff = arr[1] - arr[0];
+      const DIFF = arr[1] - arr[0];
       let arith = true;
         
       for (let i = 0; i < arr.length - 1; i++) {
-        if (arr[i+1] - arr[i] !== diff) {
+        if (arr[i+1] - arr[i] !== DIFF) {
           arith = false;
         }
       }
@@ -15,11 +15,11 @@ function ArithGeoII(arr) {
     
     // Write function test for geometric sequence where each pair of terms should have same ratio
     function isGeometric(arr) {
-      let ratio = arr[1] / arr[0];
+      const RATIO = arr[1] / arr[0];
       let geo = true;
       
       for (let i = 0; i < arr.length - 1; i++) {
-        if (arr[i+1] / arr[i] !== ratio) {
+        if (arr[i+1] / arr[i] !== RATIO) {
           geo = false;
         }
       }
