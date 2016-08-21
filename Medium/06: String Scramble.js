@@ -6,7 +6,7 @@ function StringScramble(str1,str2) {
     // Loop through second string
     for (let i = 0; i < str2.length; i++) {
     
-        // When a value is not found, we know string 2 cannot be rearranged into string 1.
+        // If a value from string 2 is not found in array 1, we know string 2 cannot be rearranged into string 1.
         if (!arr1.includes(str2[i])) {
             return false;
             
