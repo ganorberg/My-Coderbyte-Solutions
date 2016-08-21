@@ -1,5 +1,5 @@
 # My-Coderbyte-Solutions
-If you need help with Coderbyte's Easy Challenges, you've come to the right place! I've laid out all my solutions with well-commented code as a resource for any programmer to follow along.
+If you need help with Coderbyte's Easy or Medium Challenges, you've come to the right place! I've laid out all my solutions with well-commented code as a resource for any programmer to follow along.
 
 **Background**
 
