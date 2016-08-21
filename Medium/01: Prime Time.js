@@ -7,7 +7,7 @@ function PrimeTime(num) {
   
   // Brute force method checks if our number is divisible by any number until its square root.
   // This ends the loop before iterating over factors a second time.
-  for (i = 2; i < Math.sqrt(num); i++) {
+  for (i = 2; i <= Math.sqrt(num); i++) {
       if (num % i === 0) {
           return false;
       }
