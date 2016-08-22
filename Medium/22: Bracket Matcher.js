@@ -21,6 +21,6 @@ function BracketMatcher(str) {
         }
     }
     
-    // If all pairs matched, return 1. Otherwise, return 0.
+    // If all pairs match, return 1! Otherwise, return 0.
     return counter === 0 ? 1 : 0;
 }
