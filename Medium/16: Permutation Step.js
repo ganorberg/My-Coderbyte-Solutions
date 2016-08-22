@@ -15,7 +15,7 @@ function PermutationStep(num) {
             
             // If you think about it, the smallest permutation occurs by
             // sorting all digits after the swap in ascending order
-            let sortedTail = arr.splice(i, arr.length - 1).sort((a, b) => a -b);
+            let sortedTail = arr.splice(i, arr.length - 1).sort((a, b) => a - b);
             
             // Combine the spliced array and ascending tail to get the next greatest permutation!
             return arr.concat(sortedTail).join('');
