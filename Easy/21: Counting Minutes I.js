@@ -26,7 +26,7 @@ function CountingMinutesI(str) {
        totalMinutes += 12 * 60;
     }
     
-    // Function returns total minutes with exceptions included
+    // Function returns total minutes with edge cases included
     return totalMinutes;
   }
   
