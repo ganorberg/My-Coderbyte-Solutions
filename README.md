@@ -34,6 +34,7 @@ Array methods:
 - Regular expressions (abbreviated as "regex" or "RegExp") show up early on in the top solutions to various problems. I've provided solutions without regex because of its complexity to learn and read. However, regex can be incredibly powerful as a search and replace tool, so if you'd like to give it a try, I recommend checking out this website: http://www.regexr.com/
 
 **Quick Note**
+
 My code is definitely nowhere near perfect, as I'm just a beginner at Javascript myself. If you notice any ways to improve one of my solutions, feel free to message me! I'd love to chat about modifying any of my code to make it more clear, readable or efficient.
 
 Good luck on your journey, and happy coding!
