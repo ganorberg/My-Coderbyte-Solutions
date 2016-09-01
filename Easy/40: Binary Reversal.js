@@ -27,14 +27,3 @@ function BinaryReversal(str) {
   
   return decimal;
 }
-
-CONDENSED WITH CHAINING:
-
-function BinaryReversal(str) { 
-  function pad(num, size) {
-    let s = num.toString();
-    while (s.length < size) {s = "0" + s;}
-    return s; }
-  let binary = Number(str).toString(2);
-  return parseInt(pad(binary, 8 * Math.ceil(binary.length / 8)).split('').reverse().join(''), 2);
-}
