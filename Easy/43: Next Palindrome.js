@@ -16,12 +16,3 @@ function NextPalindrome(num) {
   // When loop exits, we have our next palindrome!
   return (num);
 }
-
-WITHOUT COMMENTS:
-
-function NextPalindrome(num) { 
-  function isPalindrome(str) {return str.split('').reverse().join('') === str;}
-  num = num + 1;
-  while (isPalindrome(num.toString()) === false) {num++;}
-  return (num);
-}
