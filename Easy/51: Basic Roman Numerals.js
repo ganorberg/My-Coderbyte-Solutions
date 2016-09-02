@@ -27,25 +27,3 @@ function BasicRomanNumerals(str) {
   // This represents the total given by the Roman numerals!
   return sum;
 }
-
-
-WITHOUT COMMENTS:
-
-function BasicRomanNumerals(str) { 
-
-  var numbers = {I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000};
-  var sum = 0;
-  
-  for (var i = 0; i < str.length; i++) {
-      var curr = numbers[str[i]];
-      var next = numbers[str[i+1]];
-      
-      if (curr < next) {
-          sum += next - curr;
-          i++;
-      } else {
-          sum += curr;
-      }
-  }
-  return sum;
-}
