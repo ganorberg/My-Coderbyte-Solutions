@@ -24,15 +24,18 @@ function LongestIncreasingSequence(arr) {
       return 1;
     });
   
-  // LIS of this array is represented by the max value found in listLength
-  return Math.max(...listLength);
+    // LIS of this array is represented by the max value found in listLength
+    return Math.max(...listLength);
   }
 
   // Create storage for LIS of all possible IS arrays
   let max = 0;
   
-  // Loop through input array to calculate length of
-  // all possible IS and update max value accordingly.
+  /*
+   * Now we can loop through input array to calculate length of
+   * all possible IS and update max value accordingly.
+   */
+
   arr.forEach((elem, index) => {
     let longest = findLongestFromStart(elem, arr.slice(index + 1));
     
