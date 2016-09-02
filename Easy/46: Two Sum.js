@@ -24,21 +24,3 @@ function TwoSum(arr) {
   // If subarray pairs stored, join with space. Otherwise, return -1.
   return (answer.length > 0) ? answer.join(' ') : -1;
 }
-
-WITHOUT COMMENTS:
-
-function TwoSum(arr) {
-  let target = arr.shift();
-  const LEN = arr.length;
-  let answer = [];
-
-  for (let i = 0; i < LEN; i++) {
-    for (let j = i + 1; j < LEN; j++) {
-      if (arr[i] + arr[j] === target) {
-        answer.push([arr[i],arr[j]]);
-        break;
-      }
-    }
-  }
-  return (answer.length > 0) ? answer.join(' ') : -1;
-}
