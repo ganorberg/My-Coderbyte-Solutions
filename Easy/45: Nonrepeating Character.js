@@ -23,24 +23,3 @@ function NonrepeatingCharacter(str) {
       }
   }
 }
-
-WITHOUT COMMENTS:
-
-function NonrepeatingCharacter(str) { 
-
-  var table = {};
-  
-  for (var i = 0; i < str.length; i++) {
-      if (table[str[i]] === undefined) {
-          table[str[i]] = 1;
-      } else {
-          table[str[i]]++;
-      }
-  }
-  
-  for (var letter in table) {
-      if (table[letter] === 1) {
-          return letter;
-      }
-  }
-}
