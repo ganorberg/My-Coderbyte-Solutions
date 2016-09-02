@@ -1,9 +1,5 @@
 function LargestPair(num) { 
-  //store highest in memory
-  //multiply first digit by 10 then add to second digit
-  //if curr > highest, store new highest
-  //return highest
-  
+
   // Convert to string for looping
   var str = num.toString();
   
@@ -23,24 +19,5 @@ function LargestPair(num) {
     }
   
   // Let the world know the largest double digit pair!
-  return highest;
-}
-
-WITHOUT COMMENTS:
-
-function LargestPair(num) { 
-  
-  var str = num.toString();
-  var highest = 0;
-  
-  for (var i = 0; i < str.length - 1; i++) {
-    var tens = Number(str[i]);
-    var unit = Number(str[i+1]);
-    var curr = tens*10 + unit;
-    
-    if (curr > highest)
-      highest = curr;
-    }
-    
   return highest;
 }
