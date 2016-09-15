@@ -15,7 +15,7 @@ function TwoSum(arr) {
       
       // If both integers add to target, push as subarray then end inner loop since pair was found
       if (arr[i] + arr[j] === target) {
-        answer.push([arr[i],arr[j]]);
+        answer.push([arr[i], arr[j]]);
         break;
       }
     }
