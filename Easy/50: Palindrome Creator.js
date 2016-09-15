@@ -1,39 +1,42 @@
 function PalindromeCreator(str) {
     
-    // If str is already a palindrome:
-    if (str === str.split("").reverse().join("")) {
-        return "palindrome";
+    // Write a palindrome test
+    function isPalindrome(string) {
+      return string === string.split('').reverse().join('');
     }
     
-    var length = str.length;
-    str = str.split("");
+    // Check if input is already a palindrome
+    if (isPalindrome(str)) return 'palindrome';
     
-    // Check to see if you can create a palindrome by only removing one letter:
+    let arr = str.split('');
+    let len = arr.length;
     
-    for (let i = 0; i < length; i++) {
-        let testChar = str.splice(i,1).join("");
-        if (str.join("") === str.reverse().join("")){
-            return testChar;
-        }
-        str.reverse().splice(i,0,testChar);
+    // Remove one character at a time and test if palindrome
+    for (let i = 0; i < len; i++) {
+        let removedChar = arr.splice(i, 1).join('');
+        
+        if (isPalindrome(arr.join(''))) return removedChar;
+        
+        arr.splice(i, 0, removedChar);
     }
     
-    // Check to see if you can create a palindrome by removing 2 letters
-    // If length > 4 (meaning the result would be at least 3 characters long):
-    for (let i = 0; i < length; i++) {
-        let testChar = str.splice(i,1).join("");
-        if (length > 4) {
-          for (let j = 0; j < str.length; j++) {
-              let testChar2 = str.splice(j,1).join("");
-              if (str.join("") === str.reverse().join("")){
-                  return testChar+ "" + testChar2;
-                }
-                str.reverse().splice(j,0,testChar2);
+    // For every character removed, remove another character and test if palindrome
+    for (let i = 0; i < len; i++) {
+        let removedChar = arr.splice(i, 1).join('');
+        
+        if (len > 4) {
+          for (let j = 0; j < len; j++) {
+              let removedChar2 = arr.splice(j, 1).join('');
+              
+              if (isPalindrome(arr.join(''))) return removedChar + '' + removedChar2;
+              
+              arr.splice(j, 0, removedChar2);
           }
         }
-        str.splice(i,0,testChar);
+      
+        arr.splice(i, 0, removedChar);
     }
     
-    // If no palindrome was found:
-    return "not possible";
+    // Since no palindrome was found after removing 2 characters...
+    return 'not possible';
 }
