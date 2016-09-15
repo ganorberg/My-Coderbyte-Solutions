@@ -37,6 +37,6 @@ function PalindromeCreator(str) {
         arr.splice(i, 0, removedChar);
     }
     
-    // Since no palindrome was found after removing 2 characters...
+    // If no palindrome was found after removing 2 characters
     return 'not possible';
 }
