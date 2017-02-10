@@ -1,6 +1,6 @@
 function FibonacciChecker(num) { 
     
-    // Edge cases
+    // Base cases
     if (num === 0 || num === 1) {
         return 'yes';    
     }
